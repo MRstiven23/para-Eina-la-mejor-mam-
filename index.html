@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para mi hermosa madre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="card">
+      <button id="playButton" class="music-button">▶ Activar Música</button>
+    <h1>¡Feliz día, mamá!</h1>
+    <p id="mensaje-principal">
+      Gracias por todo lo que haces, por tu amor y por ser mi mejor guía.
+    </p>
+    <img src="image/image-p.jpg" alt="Te amo mamá" class="foto" />
+    <button onclick="mostrarSorpresa()">Haz clic aquí</button>
+    <p id="mensaje-secreto"></p>
+    
+    <!-- Modifica esta sección -->
+<div class="galeria">
+    <h4 style="text-align: center; margin: 20px 0;">Unas fotos para recordar...</h4>
+    <div class="imagenes-container">
+        <img src="image/image-m1.jpg" alt="mamá 1" />
+        <img src="image/image-m2.jpg" alt="mamá 2" />
+        <img src="image/image-m3.jpg" alt="mamá 3" />
+        <img src="image/image-m4.jpg" alt="mamá 4" />
+        <img src="image/image-m5.jpg" alt="mamá 5" />
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+    </div>
+</div>
+      
+  </div>
+  
+
+ <!-- Reemplaza tu etiqueta <audio> actual por esta: -->
+<audio id="bgMusic" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+  </audio>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

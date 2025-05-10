@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado a min-height */
+    margin: 0;
+    padding: 20px; /* Agregado para espacio en móviles */
+}
+  
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px; /* Aumentado el ancho máximo */
+    width: 100%; /* Asegura que ocupe el ancho disponible */
+    margin: auto; /* Centrado adicional */
+}
+  
+  h1 {
+    color: #e91e63;
+  }
+  
+  .foto {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d81b60;
+  }
+  
+  .galeria img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* esto recorta sin deformar */
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+.galeria {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap; /* Esto evita que los elementos se muevan a otra línea */
+    padding: 15px 0;
+    gap: 15px;
+    margin: 20px 0;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.galeria img {
+    width: 150px; /* Tamaño fijo para cuadrícula */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    flex: 0 0 auto; /* Evita que se estiren */
+}
+  
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  
+  .galeria::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .music-button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+  }
+  
+  .music-button:hover {
+    background-color: #45a049;
+  }
+  /* Estilo para el botón de música */
+#playButton {
+    padding: 10px 20px;
+    background-color: #e91e63; /* Rosa para combinar con tu diseño */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px auto; /* Centrado y con espacio */
+    display: block; /* Para que ocupe su propia línea */
+    width: fit-content; /* Ancho ajustado al texto */
+    transition: background-color 0.3s;
+  }
+  
+  #playButton:hover {
+    background-color: #d81b60; /* Rosa oscuro al pasar el mouse */
+  }
+  
+  /* Opcional: Icono de altavoz */
+  #playButton::before {
+    content: "🔊 ";
+  }
